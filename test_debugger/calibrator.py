@@ -37,7 +37,7 @@ offset_r = target_black - (dark_r * gain_white_r)
 offset_g = target_black - (dark_g * gain_white_g)
 offset_b = target_black - (dark_b * gain_white_b)
 
-img_process = cv2.imread("toprocess3.png")
+img_process = cv2.imread("toprocess.png")
 img_process[:,:,2] = np.clip(img_process[:,:,2]  * gain_white_r + offset_r, 0, 255)
 img_process[:,:,1] = np.clip(img_process[:,:,1]  * gain_white_g + offset_g, 0, 255)
 img_process[:,:,0] = np.clip(img_process[:,:,0]  * gain_white_b + offset_b, 0, 255)
