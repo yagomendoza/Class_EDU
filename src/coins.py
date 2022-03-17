@@ -12,3 +12,5 @@ How can you identify the bag with the forgeries with just one weighing?
 And what if you didn't know how many bags contain forgeries?
 
 """
+
+F = "DUMMIE"
